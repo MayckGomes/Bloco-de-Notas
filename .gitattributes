@@ -1,3 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-*.kt linguist-language=Kotlin
+*.xml linguist-language=Kotlin
+*.gradle linguist-language=Kotlin
+*.pro linguist-language=Kotlin
+*.properties linguist-language=Kotlin
