@@ -1,4 +1,4 @@
-Bloco de notas
+#Bloco de notas
 
 É um app feito para o apredizado para o desenvolvimento android
 
