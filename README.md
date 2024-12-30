@@ -11,6 +11,7 @@ este app é simples , contendo funções basicas da biblioteca do android como:
 - Shared Preferences
 
 Telas:
+
  | Home2 dark | Home2 Light | 
  | ![Home cheia dark](images/homeFullDark.jpg) | ![Home cheia Light](images/homeFullLight.jpg) | 
  | Criar dark | Criar Light | 
