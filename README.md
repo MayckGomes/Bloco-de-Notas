@@ -15,16 +15,16 @@ Telas:
 Home Vazia
 
 |---|---|
+|Home1 dark|Home1 Light|
 |![Home vazia Dark](images/homeEmptyDark.jpg)|![Home vazia Light](images/homeEmptyLight.jpg)|
-|Home vazia dark|Home vazia Light|
 |---|---|
+|Home2 dark|Home2 Light|
 |![Home cheia dark](images/homeFullDark.jpg)|![Home cheia Light](images/homeFullLight.jpg)|
-|Home cheia dark|Home cheia Light|
 |---|---|
-|![Criar Dark](images/criarnotaDark.jpg)|![Criar Light](images/criarnotaLight.jpg)|
 |Criar dark|Criar Light|
+|![Criar Dark](images/criarnotaDark.jpg)|![Criar Light](images/criarnotaLight.jpg)|
 |---|---|
-|![Editar Dark](images/editarnotaDark.jpg)|![Editar Light](images/editarnotaLight.jpg)|
 |Editar dark|Editar Light|
+|![Editar Dark](images/editarnotaDark.jpg)|![Editar Light](images/editarnotaLight.jpg)|
 |---|---|
 
