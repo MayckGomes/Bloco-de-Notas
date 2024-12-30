@@ -14,10 +14,7 @@ Telas:
 
 Home Vazia
 
-|---|---|
-|Home1 dark|Home1 Light|
-|![Home vazia Dark](images/homeEmptyDark.jpg)|![Home vazia Light](images/homeEmptyLight.jpg)|
-|---|---|
+
 |Home2 dark|Home2 Light|
 |![Home cheia dark](images/homeFullDark.jpg)|![Home cheia Light](images/homeFullLight.jpg)|
 |---|---|
