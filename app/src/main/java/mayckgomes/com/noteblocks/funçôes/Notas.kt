@@ -32,13 +32,8 @@ fun carregarNotas():List<Nota>{
 
     for (notas in todasNotas){
 
-        var nota:List<String>
+        val nota = notas.value.toString().split("§")
 
-        if ("," in notas.value.toString()) {
-            nota = notas.value.toString().split(",")
-        } else {
-            nota = notas.value.toString().split("§")
-        }
         lista.add(Nota(id = nota[0].toInt(),
             titulo = nota[1],
             texto = nota[2],
