@@ -1,4 +1,4 @@
-Bloco de notas
+# Bloco de notas
 
 É um app feito para o apredizado para o desenvolvimento android
 
@@ -13,7 +13,7 @@ este app é simples , contendo funções basicas da biblioteca do android como:
 Telas:
 
  | Tela dark | Tela Light |
- | --- | --- |
+ | :---: | :---: |
  | Home1 dark | Home1 Light |
  | ![Home cheia dark](images/homeEmptyDark.jpg) | ![Home cheia Light](images/homeEmptyLight.jpg) |
  | Home2 dark | Home2 Light | 

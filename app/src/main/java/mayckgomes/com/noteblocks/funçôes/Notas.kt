@@ -31,8 +31,14 @@ fun carregarNotas():List<Nota>{
     val todasNotas = editor.all
 
     for (notas in todasNotas){
-        val nota = notas.value.toString().split(",")
 
+        var nota:List<String>
+
+        if ("," in notas.value.toString()) {
+            nota = notas.value.toString().split(",")
+        } else {
+            nota = notas.value.toString().split("§")
+        }
         lista.add(Nota(id = nota[0].toInt(),
             titulo = nota[1],
             texto = nota[2],
@@ -44,14 +50,14 @@ fun carregarNotas():List<Nota>{
 @Composable
 fun addNotas(nota:Nota){
     val editor = pegarEditor()
-    editor.edit().putString("${nota.id}","${nota.id},${nota.titulo},${nota.texto},${nota.data}")
+    editor.edit().putString("${nota.id}","${nota.id}§${nota.titulo}§${nota.texto}§${nota.data}")
         .apply()
 }
 
 @Composable
 fun editarNota(notas:Nota){
     val editor = pegarEditor()
-    editor.edit().putString("${notas.id}","${notas.id},${notas.titulo},${notas.texto},${notas.data}")
+    editor.edit().putString("${notas.id}","${notas.id}§${notas.titulo}§${notas.texto}§${notas.data}")
         .apply()
 }
 
@@ -65,7 +71,7 @@ fun excluirNota(id:Int){
     editor.edit().clear().apply()
 
     for (nota in notas){
-        val listaItems = nota.value.toString().split(",")
+        val listaItems = nota.value.toString().split("§")
 
         val id = listaItems[0]
         val titulo = listaItems[1]
@@ -76,10 +82,10 @@ fun excluirNota(id:Int){
             continue
 
         } else if (id.toInt() == idAtual){
-            editor.edit().putString(id,"$id,$titulo,$texto,$data").apply()
+            editor.edit().putString(id,"$id§$titulo§$texto§$data").apply()
 
         } else {
-            editor.edit().putString("$idAtual","$idAtual,$titulo,$texto,$data").apply()
+            editor.edit().putString("$idAtual","$idAtual§$titulo§$texto§$data").apply()
         }
 
         idAtual++
